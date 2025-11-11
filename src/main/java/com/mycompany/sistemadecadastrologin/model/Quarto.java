@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.sistemadecadastrologin;
+package com.mycompany.sistemadecadastrologin.model;
 
 /**
  *
@@ -16,8 +16,6 @@ public class Quarto {
 
     public Quarto() {
     }
-    
-    
 
     public Quarto(int numero, String tipo, double preco) {
         this.numero = numero;
@@ -60,8 +58,9 @@ public class Quarto {
     
     @Override
     public String toString() {
-        return "Quarto " + numero + " (" + tipo + ") - R$" + preco + " | " +
-               (ocupado ? "Disponível" : "Ocupado");
+        return "" + numero + 
+        " (" + tipo + ") " +
+        "\n" + preco +
+        (ocupado ? "\nDisponível" : "\nOcupado");
     }
-    
 }

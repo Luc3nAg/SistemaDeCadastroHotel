@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.sistemadecadastrologin;
+package com.mycompany.sistemadecadastrologin.view;
+
+import com.mycompany.sistemadecadastrologin.control.*;
 
 /**
  *
@@ -27,6 +29,10 @@ public class SistemaDeCadastroLogin {
         con.FazerReserva(102, "98765432100", 3);
         con.FazerReserva(103, "11122233344", 3);
         con.FazerReserva(103, "12345678900", 2);
+
+        con.FazerCheckout(101);
+        con.FazerCheckout(102);
+        con.FazerCheckout(103);
         
     }
 }

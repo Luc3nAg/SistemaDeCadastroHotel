@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.sistemadecadastrologin;
+package com.mycompany.sistemadecadastrologin.model;
 
 /**
  *
@@ -27,9 +27,33 @@ public class Reserva {
         return preco;
     }
 
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public void setQuarto(Quarto quarto) {
+        this.quarto = quarto;
+    }
+
+    public Cliente getHospede() {
+        return hospede;
+    }
+
+    public void setHospede(Cliente hospede) {
+        this.hospede = hospede;
+    }
+
+    public int getDias() {
+        return dias;
+    }
+
+    public double getValorTotal() {
+        return dias * quarto.getPreco();
+    }
+
     @Override
     public String toString() {
-        return "quarto=" + quarto + ", hospede=" + hospede + ", dias = " + dias + "Preco: " + calcularpreco();
+        return "Quarto: " + quarto + "\nHospede: " + hospede + "\nDias: " + dias + "\nPreço: " + calcularpreco() + "\n";
     }
     
     
