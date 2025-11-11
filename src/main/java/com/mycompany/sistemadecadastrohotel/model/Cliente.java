@@ -1,8 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * - A classe tem uma única responsabilidade: representar um cliente do sistema.
+ * - Ela contém apenas os dados e comportamentos diretamente ligados a um cliente
+ *   (nome, CPF, telefone e seus getters/setters).
+ * - Isso evita que ela se torne uma classe "inchada" com responsabilidades de outras áreas,
+ *   mantendo o código simples, compreensível e de fácil manutenção.
  */
-package com.mycompany.sistemadecadastrologin.model;
+
+package com.mycompany.sistemadecadastrohotel.model;
 
 
 /**
@@ -51,5 +55,4 @@ public class Cliente {
     public String toString() {
         return nome + " | CPF: " + CPF + " | Telefone: " + Telefone;
     }
-    
 }

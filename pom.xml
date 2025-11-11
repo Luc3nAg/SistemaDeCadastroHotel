@@ -10,4 +10,5 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.mycompany.sistemadecadastrologin.SistemaDeCadastroLogin</exec.mainClass>
     </properties>
+    <name>SistemaDeCadastroHotel</name>
 </project>

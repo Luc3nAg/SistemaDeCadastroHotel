@@ -1,8 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * - A classe lida apenas com informações que pertencem ao quarto (número, tipo, preço, ocupado).
+ * - Nenhum método aqui faz reserva, checkout ou cálculos externos — cada método atua dentro
+ *   da responsabilidade de um quarto.
+ * - Assim, o código é fácil de manter, testar e compreender.
  */
-package com.mycompany.sistemadecadastrologin.model;
+
+package com.mycompany.sistemadecadastrohotel.model;
 
 /**
  *
